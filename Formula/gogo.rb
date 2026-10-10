@@ -1,15 +1,33 @@
 class Gogo < Formula
   desc "Open a configured terminal workspace with one command"
   homepage "https://github.com/conorbr/gogo"
-  url "https://github.com/conorbr/gogo/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "1caa1f48e0332f24a8cacaf30b0136af16164cdac0bf6d83cda2fcddd042e47a"
   license any_of: ["MIT", "Apache-2.0"]
-  head "https://github.com/conorbr/gogo.git", branch: "main"
 
-  depends_on "rust" => :build
+  # Prebuilt binaries from the GitHub Release. Nothing to compile.
+  on_macos do
+    on_arm do
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.0/gogo-v0.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3ee1e4c96fd66061013fa948a45f0dbb81f98a05aa382b14ee6474e4fad46c0b"
+    end
+    on_intel do
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.0/gogo-v0.1.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7f963f8f16eb396ff0d08b504586c20d287653552f8c3094c6fc262af6b789c1"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.0/gogo-v0.1.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "56ab1ab67cd298fdb3cea4e69f9d601f459b1b87683c9d6882140c00857b2624"
+    end
+    on_intel do
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.0/gogo-v0.1.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "01ffc83a3b80c5c97b03e2c1956d75b147f54203124155d26542d8e51bf64dc0"
+    end
+  end
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "gogo"
   end
 
   test do
