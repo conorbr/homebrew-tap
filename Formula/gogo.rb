@@ -6,23 +6,23 @@ class Gogo < Formula
   # Prebuilt binaries from the GitHub Release. Nothing to compile.
   on_macos do
     on_arm do
-      url "https://github.com/conorbr/gogo/releases/download/v0.1.1/gogo-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "2326ab7191e14e8d3558afd4952c56c87adf0b24ebcfb34baf09d1b8a7eef792"
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.2/gogo-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "f3fcc649b591a5b82810f31b6c1691ba58c9eda9496f7dbdfaf946f2362bdd6d"
     end
     on_intel do
-      url "https://github.com/conorbr/gogo/releases/download/v0.1.1/gogo-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "0240cf6e2cde6149e4ad90d54fbe3c0ba61a07750916893aaa4d97c15a37cdb5"
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.2/gogo-v0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "cb4a0eaa7706f193f443524aab00788b0d1440fd70be7ecba9aec0ed87f0f455"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/conorbr/gogo/releases/download/v0.1.1/gogo-v0.1.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "8021b32fe1aaf24324cd49a6e3c95535aa9c172c41029c1b7d968cd794b9fa6e"
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.2/gogo-v0.1.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "a96ce9b71f437ec2ca093ae4f8b886f6df280695dbe9cdca9e54ccca5c46d761"
     end
     on_intel do
-      url "https://github.com/conorbr/gogo/releases/download/v0.1.1/gogo-v0.1.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c38dfd1849f162caa47296dd31acf977945e580fb0683ea23d62cd4252e6fda7"
+      url "https://github.com/conorbr/gogo/releases/download/v0.1.2/gogo-v0.1.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "cfb0cdf689f41a82083ffbf4cff82b453c832d08f5f9102f571a3bebc1a793d7"
     end
   end
 
