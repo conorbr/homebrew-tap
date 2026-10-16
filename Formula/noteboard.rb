@@ -6,23 +6,23 @@ class Noteboard < Formula
   # Prebuilt binaries from the GitHub Release. Nothing to compile.
   on_macos do
     on_arm do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "166cd12407efb159c4beeb8f2d6161e560cf6cafb9bd0b3f6aad7de280faa057"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.1/noteboard-v0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "c7d5c65c2a28670176ead7350a4307fd876b2bb4dfff8c16b41583862abc77ba"
     end
     on_intel do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "40035b2625a57f24e5e66f6197e6eeb23057b2705f75044f5b9f4d96665d0132"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.1/noteboard-v0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "8586d68d7aab3676bfcba5c5d4c791d8e1ef0aaba25387a36eba22cd0a79e9f6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "c2d0da827508e0d25503534f238156f62575dd1eb05190953a40725a26dce427"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.1/noteboard-v0.5.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "874619303b7c266f7d00b9ba62bd1de8294f41f1c623313e00fda996840c49e7"
     end
     on_intel do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "152f796d19e6b98a9ccaf2951b9f4ac563b125971d94daa195591723a014ba9b"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.1/noteboard-v0.5.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "9afab9eebf1d4d933cdfbfddc74ec88f31e93c0abbfd94ecd286b0d28bfe2be0"
     end
   end
 
