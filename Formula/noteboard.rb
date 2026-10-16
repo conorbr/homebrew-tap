@@ -1,28 +1,28 @@
 class Noteboard < Formula
   desc "Kanban board for a folder of Markdown tickets, in the terminal"
   homepage "https://github.com/conorbr/noteboard"
-  license "BUSL-1.1"
+  license "MIT"
 
   # Prebuilt binaries from the GitHub Release. Nothing to compile.
   on_macos do
     on_arm do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.4.0/noteboard-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "470a0e852f97f6f0fb2bf5d52086d1b73b7e8f5269cf4bd454b6b6d7e69ad6c5"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "166cd12407efb159c4beeb8f2d6161e560cf6cafb9bd0b3f6aad7de280faa057"
     end
     on_intel do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.4.0/noteboard-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5c6b41ebe51bb19841addd90c2cd3308dc8e8014f0e9929623791378c91a146b"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "40035b2625a57f24e5e66f6197e6eeb23057b2705f75044f5b9f4d96665d0132"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.4.0/noteboard-v0.4.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "27e78d37015a25e2c3082f28d391a51f086e2a5ef10feddb4a2c5a278051786c"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "c2d0da827508e0d25503534f238156f62575dd1eb05190953a40725a26dce427"
     end
     on_intel do
-      url "https://github.com/conorbr/noteboard/releases/download/v0.4.0/noteboard-v0.4.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ad296281a3fed486a226d33bca13a89dd640c152f5f6d62db2d3b2cb5d20e09b"
+      url "https://github.com/conorbr/noteboard/releases/download/v0.5.0/noteboard-v0.5.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "152f796d19e6b98a9ccaf2951b9f4ac563b125971d94daa195591723a014ba9b"
     end
   end
 
